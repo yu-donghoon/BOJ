@@ -10,19 +10,13 @@ using namespace std;
 int main(void)
 {
 	int A, B, V;
-
-	cin >> A >> B >> V;
-
-	int sum = 0;
-
 	int d = 0;
 
-	while (1)
-	{
-		if (A + d *(A - B) >= V)
-			break;
-		d++;
-	}
+	scanf("%d %d %d", &A, &B, &V);
 
-	cout << d + 1 << endl;
+	while (A + d *(A - B) < V)
+		d++;
+
+	printf("%d\n", d + 1);
+
 }
