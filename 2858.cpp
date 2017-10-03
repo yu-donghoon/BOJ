@@ -41,4 +41,5 @@ int main()
 		}
 	}
 	cout << L << " " << W << endl;
+	return 0;
 }
